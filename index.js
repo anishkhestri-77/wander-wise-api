@@ -2,7 +2,7 @@
 import express from "express";
 import connectDB from "./config/database.js"; // "Import the default function connectDB from the file database.js inside the config folder.”
 import HANDLERS from './handlers/index.js';
-import errorMiddleware from './midddleware/error.js';
+import errorMiddleware from './middlewares/error.js';
 
 const app = express();
 const PORT = process.env.PORT; //“Get the PORT value from environment settings and store it in a variable.”

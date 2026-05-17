@@ -10,3 +10,13 @@ export const create = async (data) => { //data => {name: "jacket "}
 await pauses here until the DB operation completes, then stores the result*/
 return baggage;
 }
+
+export const getALL = async () => {
+    const baggages = await Baggage.find();
+    return baggages;
+}
+
+export const getONE = async () => {
+    const baggages = await Baggage.find();
+    return baggages;
+}
